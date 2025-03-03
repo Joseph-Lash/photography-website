@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Lash CSCN 315</title>
+
+    <link rel="stylesheet" href="jlphotography.css"> <!--Links the jlphotography.css sheet to the about.htm file-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--jQuery CDN-->
+
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a href="https://profsmith.site/cscn315/lash/joeylashphotography">Home</a>
+            <a class="active" href="https://profsmith.site/cscn315/lash/about">About</a>
+            <a href="https://profsmith.site/cscn315/lash/gallery">Gallery</a>
+            <a href="https://profsmith.site/cscn315/lash/contact">Contact</a>
+            <a href="https://profsmith.site/cscn315/lash/game">Game</a>
+        </div>
+        
+        <div class="aboutMe">
+            <h1 class="title">About Me</h1>
+            <p>My name is Joseph Lash and I am a photographer based in Rochester, Minnesota. I am studying
+                Computer Science with a Minors in Photography at Liberty University.
+                I am passionate about capturing the beauty of people and the world around me. 
+                If you are interested in booking a photoshoot or have any questions, feel free to contact me.</p>
+        </div>
+
+        <div class="faq-section">
+            <h1 class="title">Frequently Asked Questions</h1>
+            <div>
+                <div class="question">How long have you been doing photography?</div> <!--Question-->
+                <div class="answer">I have been doing photography for a little over 1 year.</div> <!--Answer is hidden-->
+            </div>
+            <div>
+                <div class="question">What got you into photography?</div>
+                <div class="answer">I used to always take photos on my phone, but I did not consider a real camera.
+                    After seeing the 2016 movie La La Land I was inspired to get into it professionally.</div>
+            </div>
+            <div>
+                <div class="question">What camera do you use?</div>
+                <div class="answer">I use a Canon EOS R50.</div>
+            </div>
+            <div>
+                <div class="question">How much you charge for your services?</div>
+                <div class="answer">Portrait photoshoots begin at $200 for one hour.</div>
+            </div>
+            <div>
+                <div class="question">Something came up. Can I cancel my photoshoot?</div>
+                <div class="answer">Cancellations must be made 48 hours in advance to the day of the photoshoot.</div>
+            </div>
+        </div>
+
+    </body>
+
+    <script> // jQuery script to show the answer when the question is clicked (less than 20 lines of code so included on HTML file)
+        $(document).ready(function () { // jQuery function to run when the document is ready
+            $(".question").on("click", function () { 
+                $(this).next(".answer").slideToggle(300); // jQuery function to slide the answer down when the question is clicked
+            });
+        });
+    </script>
+
+</html>

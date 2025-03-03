@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Lash CSCN 315</title>
+
+    <link rel="stylesheet" href="game.css"> <!--Links the jlphotography.css sheet to the index.htm file-->
+    <link rel="stylesheet" href="jlphotography.css"> <!--Links the jlphotography.css sheet to the index.htm file-->
+    <script src="proj10.js"></script> <!--Links proj10.js file to game.htm file-->
+    </head>
+    <body>
+
+        <div class="topnav">
+            <a href="https://profsmith.site/cscn315/lash/joeylashphotography">Home</a>
+            <a href="https://profsmith.site/cscn315/lash/about">About</a>
+            <a href="https://profsmith.site/cscn315/lash/gallery">Gallery</a>
+            <a href="https://profsmith.site/cscn315/lash/contact">Contact</a>
+            <a class="active" href="https://profsmith.site/cscn315/lash/game">Game</a>
+        </div>
+
+    <article id="gameBody">
+        <h2>Camera Knowledge Test</h2>
+        <p>Drag the Correct Camera Model to its Maker</p>
+
+        <!--Words to drag-->
+        <div id="wordBank">
+            <p id="model1" class="canon" draggable="true" ondragstart="drag(event)">Rebel T7</p>
+            <p id="model2" class="sony" draggable="true" ondragstart="drag(event)">ZV-E10</p>
+            <p id="model3" class="lumix" draggable="true" ondragstart="drag(event)">S5M2</p>
+            <p id="model4" class="canon" draggable="true" ondragstart="drag(event)">EOS R8</p>
+            <p id="model5" class="sony" draggable="true" ondragstart="drag(event)">a7 III</p>
+            <p id="model6" class="lumix" draggable="true" ondragstart="drag(event)">G100</p>
+        </div>
+
+        <!--Drop zones-->
+        <div class="dropContainer">
+            <div class="dropArea" id="canon" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Canon</h3>
+            </div>
+            <div class="dropArea" id="sony" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Sony</h3>
+            </div>
+            <div class="dropArea" id="lumix" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h3>Lumix</h3>
+            </div>
+        </div>
+
+    </article>
+</html>
