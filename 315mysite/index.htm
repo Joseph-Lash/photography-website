@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joseph Lash CSCN 315</title>
+
+        <link rel="stylesheet" href="styles.css"> <!--Links the styles.css sheet to the index.htm file-->
+
+    </head>
+    <body>
+    <div class="paragraphs">
+        <h2 id="pageTitle">Joseph Lash</h2> <!--Heading element #1-->
+        <p><b>Hometown:</b> Rochester, Minnesota<br> <!--Where I am from-->
+        <b>Major:</b> Computer Science - Software Engineering<br> <!--Major and Year-->
+        <b>Year:</b> Junior</p>
+        
+        <h3 id="aboutHeader"><u>About Me</u></h3> <!--Heading element #2-->
+        <p>Some interesting things about me are that I love to play tennis and pickleball. I am<br>
+        currently on Liberty's Club Tennis team. Also, I have been doing photography for the past<br>
+        year and am looking forward to seeing where God takes me with photography. Attached below<br>
+        is a link to my photography Instagram, as well as my email to contact me:</p>
+        <a href="https://www.instagram.com/joeylashphotography/" target="_blank">Instagram</a> <!--This creates a link to the Instagram account with the link name joeylashphotography-->
+        <a href = "mailto:jslash@liberty.edu">Email</a> <!--Link to my email-->
+        <a href ="https://profsmith.site/cscn315/lash/week2" target="_blank">More Information</a>
+
+        <hr> <!--Creates a horizontal line to differentiate between sections-->
+
+        <h3 id="aboutHeader"><u>Biblical Application</u></h3>
+        <p>In this course, I will learn how to build the parts of a website the user interacts with. Using these<br>
+        skills, I could build websites that glorify God. We are called to evangelize and spread the gospel,<br>
+        and the internet is a great way to reach a large audience quickly. 2 Timothy 4:2 reminds us<br>
+        to "Preach the word; be prepared in season and out of season; correct, rebuke and encourage-with<br>
+        great patience and careful instruction" (<i>New International Version Bible</i>, 2015, 2 Timothy 4:2).<br>
+        Designing websites that share the gospel and glorify God furthers His mission for us here on earth.</p>
+    </div>
+    <div class="enterInfo"> <!--Defined class-->
+        <p id="enterInfoTitle">Tell me about you!</p>
+        <form>
+            <label for="yourName">Your Name:</label><br>
+            <input type="text" id="yourName" name="yourName"><br> <!--Creates a input field asking for a user's name-->
+            <!--Creates a multiple choice option for a user to enter their year-->
+            <label for="year">Year:</label><br>
+            <input type="radio" id="freshman" name="year" value="FRESHMAN">
+            <label for="freshman">Freshman</label><br>
+            <input type="radio" id="sophomore" name="year" value="SOPHOMORE">
+            <label for="sophomore">Sophomore</label><br>
+            <input type="radio" id="junior" name="year" value="JUNIOR">
+            <label for="junior">Junior</label><br>
+            <input type="radio" id="senior" name="year" value="SENIOR">
+            <label for="senior">Senior</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+        <p>Works Cited: <br><br>
+        <i>New International Version Bible</i>. (2015). Zondervan.</p>
+    </body>
+</html>
