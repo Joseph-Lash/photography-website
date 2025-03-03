@@ -7,7 +7,7 @@ async function fetchData() {
 
     try {
 
-        const apiURL = 'https://api.openweathermap.org/data/2.5/weather?lat=37.413754&lon=-79.142242&appid=69f18a70431c6b77cc763ddaacd7affc&units=imperial';
+        const apiURL = "";
         // Correct coordinates for Lynchburg, VA + API key + units in Fahrenheit
 
         const response = await(fetch(apiURL)); // Fetch data from the API
